@@ -4,7 +4,7 @@ import { Venus } from './Venus';
 import { Mercury } from './Mercury';
 
 
-export const Demo = () => {
+export const Geocentric = () => {
     const centerX = window.innerWidth/2;
     const centerY = window.innerHeight/2;
     const [time, setTime] = useState(0);
@@ -47,6 +47,9 @@ export const Demo = () => {
         setIsRunning(false);
         setTime(0);
         setVenusPos(venusOrbit(0,centerX, centerY));
+        setVenusOrbitLine([]);
+        setMercuryPos(mercuryOrbit(0,centerX, centerY));
+        setMercuryOrbitLine([]);
     }
 
     const milliseconds = `0${(time % 1000) / 10}`.slice(-2);

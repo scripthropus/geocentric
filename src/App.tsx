@@ -1,10 +1,10 @@
 import './App.css';
-import { Demo } from './Demo.tsx'
+import { Geocentric} from './Geocentric.tsx'
 
 const App = () => {
   return (
     <div className="content">
-      <Demo/>
+      <Geocentric/>
     </div>
   );
 };
